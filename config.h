@@ -7,7 +7,7 @@
  */
 static char *font = "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "Iosevka Nerd Font:pixelsize=10:antialias=true:autohint=true" };
-static int borderpx = 2;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -17,7 +17,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -107,13 +107,13 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 1;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#0b0f10", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#000000", /* hard contrast: #1d2021 / soft contrast: #32302f / #0b0f10 */
 	"#df5b61",
 	"#87c7a1",
 	"#fff59d",
@@ -133,7 +133,7 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#0b0f10", /* 258 -> bg */
+	"#000000", /* 258 -> bg */
 	"#ffffff", /* 259 -> fg */
 };
 
