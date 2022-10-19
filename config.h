@@ -7,7 +7,7 @@
  */
 static char *font = "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "Iosevka Nerd Font:pixelsize=10:antialias=true:autohint=true" };
-static int borderpx = 0;
+static int borderpx = 10;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -115,26 +115,26 @@ float alphaUnfocus;
 static const char *colorname[] = {
 	"#000000", /* hard contrast: #1d2021 / soft contrast: #32302f / #0b0f10 */
 	"#df5b61",
-	"#87c7a1",
-	"#fff59d",
+	"#04db3e",
+	"#ff6a00",
 	"#1798bc",
-	"#bc83e3",
-	"#70b9cc",
+	"#f2006d",
+	"#1798bc",
 	"#ffffff",
 	"#646a73",
 	"#ee6a70",
-	"#96d6b0",
-	"#ffecb3",
+	"#04db3e",
+	"#ff6a00",
 	"#1798bc", /*#7ba5dd*/
-	"#cb92f2",
-	"#7fc8db",
+	"#f2006d",
+	"#1798bc",
 	"#ffffff",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#ffffff", /* 258 -> bg */
-	"#000000", /* 259 -> fg */
+	"#0b0f10", /* 258 -> bg */
+	"#ffffff", /* 259 -> fg */
 };
 
 
