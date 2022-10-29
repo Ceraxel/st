@@ -7,7 +7,7 @@
  */
 static char *font = "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "Iosevka Nerd Font:pixelsize=10:antialias=true:autohint=true" };
-static int borderpx = 10;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
