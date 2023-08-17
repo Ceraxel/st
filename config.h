@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font =
-    "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = {"JetBrainsMono Nerd Font:pixelsize=12"};
+    "JetBrainsMono Nerd Font:pixelsize=16:antialias=true:autohint=true";
+static char *font2[] = {"JetBrainsMono Nerd Font:pixelsize=16"};
 static int borderpx = 0;
 
 /*
@@ -108,21 +108,33 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.7;
+float alpha = 1.0;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    "#000000", /* hard contrast: #1d2021 / soft contrast: #32302f / #0b0f10 */
-    "#df5b61", "#04db3e", "#ff6a00", "#1798bc", "#f2006d", "#1798bc", "#ffffff",
-    "#646a73", "#ee6a70", "#04db3e", "#ff6a00", "#1798bc", /*#7ba5dd*/
-    "#f2006d", "#1798bc", "#ffffff", [255] = 0,
+    "#212121", /* hard contrast: #1d2021 / soft contrast: #32302f / #0b0f10 */
+    "#b7141e",
+    "#457b23",
+    "#f5971d",
+    "#134eb2",
+    "#550087",
+    "#0e707c",
+    "#eeeeee",
+    "#424242",
+    "#e83a3f",
+    "#7aba39",
+    "#fee92e",
+    "#53a4f3", /*#7ba5dd*/
+    "#a94dbb",
+    "#26bad1",
+    "#ffffff", [255] = 0,
     /* more colors can be added after 255 to use with DefaultXX */
-    "#add8e6", /* 256 -> cursor */
+    "#16aec9", /* 256 -> cursor */
     "#555555", /* 257 -> rev cursor*/
     "#0b0f10", /* 258 -> bg */
-    "#ffffff", /* 259 -> fg */
+    "#d8d8d8", /* 259 -> fg */
 };
 
 /*
@@ -245,8 +257,8 @@ static Shortcut shortcuts[] = {
     {TERMMOD, XK_Prior, zoom, {.f = +1}},
     {TERMMOD, XK_Next, zoom, {.f = -1}},
     {TERMMOD, XK_Home, zoomreset, {.f = 0}},
-    {TERMMOD, XK_C, clipcopy, {.i = 0}},
-    {TERMMOD, XK_V, clippaste, {.i = 0}},
+    {ShiftMask | ControlMask, XK_C, clipcopy, {.i = 0}},
+    {ShiftMask | ControlMask, XK_V, clippaste, {.i = 0}},
     {MODKEY, XK_c, clipcopy, {.i = 0}},
     {ShiftMask, XK_Insert, clippaste, {.i = 0}},
     {MODKEY, XK_v, clippaste, {.i = 0}},
