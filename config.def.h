@@ -225,11 +225,10 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0}        },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0}        },
 	{ MODKEY,               XK_l,           copyurl,        {.i =  0}        },
-	{ MODKEY|ShiftMask,     XK_L,           copyurl,        {.i =  1}        },
-    {TERMMOD,               XK_K,           zoom,           {.f = +1}        },
-    {TERMMOD,               XK_J,           zoom,           {.f = -1}        },
-    {MODKEY,                XK_y,           externalpipe,   {.v = copyurlcmd}},
-    {MODKEY,                XK_o,           externalpipe,   {.v = copyoutput}},
+    { TERMMOD,              XK_K,           zoom,           {.f = +1}        },
+    { TERMMOD,              XK_J,           zoom,           {.f = -1}        },
+    { MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd}},
+    { MODKEY,               XK_o,           externalpipe,   {.v = copyoutput}},
 
 };
 
