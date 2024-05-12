@@ -9,7 +9,7 @@ char *externalpipe_sigusr1[] = {"/bin/sh", "-c", "externalpipe_buffer.sh st_stri
 static char *font = "BerkeleyMono Nerd Font:pixelsize=16:antialias=true:autohint=true";
 static char *font2[] = {"BerkeleyMono Nerd Font:pixelsize=16"};
 
-static int borderpx = 10;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -138,7 +138,7 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
     "#93a1a1", /* 256 -> cursor */
     "#fdf6e3", /* 257 -> rev cursor*/
-    "#001e26", /* 258 -> bg */
+    "#1a1b26", /* 258 -> bg */
     "#839496", /* 259 -> fg */
 };
 
