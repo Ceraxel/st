@@ -115,22 +115,22 @@ float alpha = 0.8;
 static const char *colorname[] = {
 	/* 8 normal colors */
     "#073642",  /*  0: black    */
-    "#dc322f",  /*  1: red      */
-    "#859900",  /*  2: green    */
-    "#b58900",  /*  3: yellow   */
+    "#F82871",  /*  1: red      */
+    "#10a793",  /*  2: green    */
+    "#fee56c",  /*  3: yellow   */
     "#268bd2",  /*  4: blue     */
-    "#d33682",  /*  5: magenta  */
-    "#2aa198",  /*  6: cyan     */
+    "#c74cec",  /*  5: magenta  */
+    "#08e7c5",  /*  6: cyan     */
     "#eee8d5",  /*  7: white    */
 
 	/* 8 bright colors */
     "#002b36",  /*  8: brblack  */
-    "#cb4b16",  /*  9: brred    */
-    "#586e75",  /* 10: brgreen  */
-    "#657b83",  /* 11: bryellow */
-    "#839496",  /* 12: brblue   */
+    "#8e0f3a",  /*  9: brred    */
+    "#96df71",  /* 10: brgreen  */
+    "#f29c14",  /* 11: bryellow */
+    "#315f70",  /* 12: brblue   */
     "#6c71c4",  /* 13: brmagenta*/
-    "#93a1a1",  /* 14: brcyan   */
+    "#a9f4e1",  /* 14: brcyan   */
     "#fdf6e3",  /* 15: brwhite  */
 
     [255] = 0,
@@ -139,7 +139,7 @@ static const char *colorname[] = {
     "#93a1a1", /* 256 -> cursor */
     "#fdf6e3", /* 257 -> rev cursor*/
     "#1a1b26", /* 258 -> bg */
-    "#839496", /* 259 -> fg */
+    "#f7f7f8", /* 259 -> fg */
 };
 
 
