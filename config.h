@@ -30,7 +30,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 1.0;
-static float chscale = 1.0;
+static float chscale = 1.1;
 
 /*
  * word delimiter string
@@ -109,7 +109,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -138,7 +138,7 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
     "#93a1a1", /* 256 -> cursor */
     "#fdf6e3", /* 257 -> rev cursor*/
-    "#1a1b26", /* 258 -> bg */
+    "#1b1b1b", /* 258 -> bg */
     "#f7f7f8", /* 259 -> fg */
 };
 
